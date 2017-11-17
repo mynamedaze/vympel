@@ -1,0 +1,46 @@
+@mixin section-width() {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  @media #{$max-mobile-width} {
+    max-width: $max-mobile-wrapper;
+  }
+  @media #{$min-tablet-width} {
+    max-width: $max-tablet-wrapper;
+  }
+  @media #{$min-desktop-width} {
+    max-width: $max-desktop-wrapper;
+  }
+}
+@mixin paddings() {
+  @media #{$max-mobile-width} {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  @media #{$min-tablet-width} {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  @media #{$min-desktop-width} {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@mixin paddings-not-main() {
+  @media #{$max-mobile-width} {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media #{$min-tablet-width} {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  @media #{$min-desktop-width} {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@mixin centers {
+  margin-left: auto;
+  margin-right: auto;
+}

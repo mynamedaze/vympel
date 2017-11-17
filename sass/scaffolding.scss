@@ -1,0 +1,90 @@
+html {
+  font-size: 0.625rem;
+  height: 100%;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul {
+  list-style-type: none;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  transition: all 0.2s ease;
+  font-family: $font-main;
+  font-weight: 400;
+  margin: 0px;
+  color: $text-main-color;
+  background-color: $main-bg;
+  height: 100%;
+}
+a {
+  transition: all 0.2s ease;
+}
+.main-body {
+  @media #{$min-tablet-width} {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+input {
+  font-family: $font-main;
+  box-sizing: border-box;
+  border-width: 0;
+}
+input[type="submit"] {
+  cursor: pointer;
+}
+input[type="submit"]:active {
+}
+input[type="tel"],
+input[type="text"] {
+  @media #{$max-mobile-width} {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  @media #{$min-tablet-width} {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  @media #{$min-desktop-width} {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+input:focus {
+  outline-width: 0;
+  border-width: 0;
+  outline: none;
+}
+button {
+  transition: all 0.2s ease;
+  font-family: $font-main;
+  border-width: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+button:focus {
+  outline-width: 0;
+  outline: none;
+  border-width: 0;
+}
+.disable {
+  display: none;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
